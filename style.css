@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(125, 170, 202);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background: rgb(189, 185, 200);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.title {
+    background-color: rgb(50, 109, 204);
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    background-color: rgb(50, 109, 204);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.weather-card, .forecast-card {
+    margin: 10px;
+    padding: 15px;
+    background-color: whitesmoke;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.forecast-card {
+    width: 20%;
+    text-align: center;
+    background-color: antiquewhite;
+}

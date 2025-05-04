@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Weather Dashboard</h1>
+        
+        <div class="search-bar">
+            <label for="city">Enter a City Name</label>
+            <input type="text" id="city" placeholder="e.g., Tokyo">
+            <button onclick="fetchWeather()">Search</button>
+            <button onclick="useCurrentLocation()">Use Current Location</button>
+        </div>
+        
+        <div class="weather-card" id="weather-today">
+            <h2 id="city-date">City (YYYY-MM-DD)</h2>
+            <p id="temperature">Temperature: --°C</p>
+            <p id="wind">Wind: -- M/S</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="condition">Condition: --</p>
+        </div>
+
+        <h2>4-Day Forecast</h2>
+        <div class="forecast-container">
+            <!-- 4-Day Forecast Cards -->
+            <div class="forecast-card" id="forecast-day-1"></div>
+            <div class="forecast-card" id="forecast-day-2"></div>
+            <div class="forecast-card" id="forecast-day-3"></div>
+            <div class="forecast-card" id="forecast-day-4"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
